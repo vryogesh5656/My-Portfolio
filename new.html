@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yogesh's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.01rem;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 100px 0;
+      }
+
+      .firstSection > div {
+        width: 30%;
+      }
+
+      .leftSection {
+        font-size: 1.5rem;
+        margin: 30px 0;
+      }
+
+      .leftSection .btn {
+        padding: 12px;
+        background-color: #000021;
+        color: white;
+        border-radius: 6px;
+        border: 2px solid;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .leftSection .buttons {
+        padding: 23px;
+      }
+
+      .rightSection img {
+        width: 80%;
+      }
+
+      .purple {
+        color: blueviolet;
+      }
+
+      #element {
+        color: rgb(153, 153, 226);
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      .SecondSection {
+        max-width: 80vw;
+        margin: auto;
+      }
+
+      .SecondSection h1 {
+        font-size: 1.9rem;
+      }
+
+      .project {
+        margin: 20px 0;
+        color: white;
+      }
+
+      .project h2 {
+        font-size: 1.5rem;
+        color: blueviolet;
+      }
+
+      .project p {
+        color: gray;
+        font-size: 0.9rem;
+      }
+
+      .education,
+      .skills {
+        max-width: 80vw;
+        margin: auto;
+        margin-top: 40px;
+      }
+
+      .education h1,
+      .skills h1 {
+        font-size: 1.9rem;
+      }
+
+      .education-item,
+      .skill-item {
+        margin: 20px 0;
+      }
+
+      .education-item h2,
+      .skill-item h2 {
+        font-size: 1.5rem;
+        color: blueviolet;
+      }
+
+      .education-item p,
+      .skill-item p {
+        color: gray;
+        font-size: 0.9rem;
+      }
+
+      footer {
+        background-color: #0e0e1a;
+      }
+
+      .footer {
+        display: flex;
+        padding: 25px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul {
+        list-style: none;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 15px 0;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          height: auto;
+        }
+
+        .firstSection {
+          flex-direction: column;
+          text-align: center;
+          margin: 50px 0;
+        }
+
+        .leftSection,
+        .rightSection {
+          width: 90%;
+        }
+
+        .rightSection img {
+          width: 100%;
+        }
+
+        .footer {
+          flex-direction: column;
+          padding: 20px;
+        }
+
+        .footer > div {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        nav {
+          flex-direction: column;
+          padding: 10px;
+        }
+
+        .firstSection {
+          margin: 20px 0;
+        }
+
+        .footer {
+          flex-direction: column;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">R Yogesh's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="about"class="firstSection">
+        <div class="leftSection">
+          Hello, my name is <span class="purple">R Yogesh</span> and I am a
+          passionate
+          <span id="element"></span>
+          <div class="buttons">
+            <a href="https://drive.google.com/file/d/1EslTAlHPY8LPsR7KtLxDcb_gZcweg4lz/view?usp=sharing"><button class="btn">Download Resume</button></a>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="image.png" alt="" />
+        </div>
+      </section>
+
+      <hr />
+      <section id="projects"class="SecondSection">
+        <span class="text-gray">Projects</span>
+        <h1>What I Have Built</h1>
+
+        <div class="project">
+          <h2>Web-Based Application for Movie Prediction</h2>
+          <p>Developed a full-stack web application using Python, Streamlit, and Logistic Regression to predict the verdict of upcoming movies. (Jan 2024 – April 2024)</p>
+        </div>
+
+        <div class="project">
+          <h2>Customer Churn Prediction</h2>
+          <p>Built a model using Random Forest and Decision Tree to predict customer churn. Achieved 85-90% accuracy and identified key factors affecting customer retention. (Oct 2024)</p>
+        </div>
+
+        <div class="project">
+          <h2>Life Expectancy Prediction</h2>
+          <p>Developed a machine learning model with data preprocessing and regression models. Achieved best results with Random Forest. (Oct 2024)</p>
+        </div>
+      </section>
+
+      <hr />
+      <section id="education"class="education">
+        <span class="text-gray">Education</span>
+        <h1>My Educational Background</h1>
+
+        <div class="education-item">
+          <h2>XII Standard</h2>
+          <p>Kendriya Vidyalaya No.1, Dehuroad, Pune</p>
+        </div>
+
+        <div class="education-item">
+          <h2>B.tech CSE</h2>
+          <p>Symbiosis Institute of Technology, Pune</p>
+        </div>
+      </section>
+
+      <hr />
+      <section id="skills" class="skills">
+        <span class="text-gray">Skills</span>
+        <h1>My Skills</h1>
+
+        <div class="skill-item">
+          <h2>Programming Languages</h2>
+          <p>C/C++, Java, Python</p>
+        </div>
+
+        <div class="skill-item">
+          <h2>Data Visualization</h2>
+          <p>Numpy, Pandas, Matplotlib</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="contact"class="footer">
+        <div class="footer-first">
+          <h3>Contact Me</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/r-yogesh-700195256/">Link</a></li>
+            <li>GitHub: <a href="https://github.com/vryogesh5656">Link</a></li>
+            <li>Email: <a href="mailto:vr.yogesh2209@gmail.com">vr.yogesh2209@gmail.com</a></li>
+            <li>Phone: <a href="tel:+9309715981">9309715981</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; yogeshsportfolio.com | All rights Reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Computer Science Student", "Machine Learning Student"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
